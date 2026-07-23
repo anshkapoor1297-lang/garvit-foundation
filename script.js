@@ -1,7 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.querySelector("button");
+// Garvit Foundation Website
 
-    button.addEventListener("click", function () {
-        alert("Thank you for supporting Garvit Foundation!");
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Website Loaded Successfully");
+});
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if(target){
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
     });
 });
