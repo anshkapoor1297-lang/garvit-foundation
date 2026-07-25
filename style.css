@@ -246,3 +246,150 @@ color:#fff;
 }
 
 .
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery{
+padding:80px 0;
+background:#fff;
+}
+
+.gallery h2{
+text-align:center;
+font-size:42px;
+color:#0b6b37;
+margin-bottom:40px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.gallery-grid img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+padding:80px 0;
+background:#f5fff8;
+text-align:center;
+}
+
+.contact h2{
+font-size:42px;
+color:#0b6b37;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:18px;
+margin:12px 0;
+color:#444;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+background:#083b1e;
+color:#fff;
+padding:35px 20px;
+text-align:center;
+}
+
+footer h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+footer p{
+margin:8px 0;
+color:#ddd;
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.header .container{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+margin-top:15px;
+}
+
+.logo h2{
+font-size:18px;
+text-align:center;
+}
+
+.hero{
+margin-top:120px;
+}
+
+.overlay h1{
+font-size:34px;
+}
+
+.overlay p{
+font-size:16px;
+}
+
+.about .container{
+flex-direction:column;
+}
+
+.about-text,
+.about-image{
+width:100%;
+text-align:center;
+}
+
+.about-text h2,
+.services h2,
+.gallery h2,
+.contact h2,
+.why h2{
+font-size:30px;
+}
+
+.hero-btn{
+flex-direction:column;
+align-items:center;
+}
+
+.btn{
+width:260px;
+text-align:center;
+}
+
+.service-grid,
+.gallery-grid,
+.why-grid{
+grid-template-columns:1fr;
+}
+
+}
